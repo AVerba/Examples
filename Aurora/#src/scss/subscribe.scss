@@ -1,0 +1,93 @@
+.subscribe{
+    &__body {
+        padding: 32px 0; 
+        margin: 0px auto;
+        text-align: center; 
+    }
+    &__label {
+        width: 439px;
+        height: 36px;
+        color: #000000;
+        font-family: "Poppins-Regular";
+        font-size: 12px;
+        letter-spacing: 0.87px;
+        text-align: left;
+        margin-bottom: 14px;
+    }
+    &__form {
+        display: flex;
+        font-size: 0; 
+    }
+    &__input {
+        width: 335px;
+        padding: 0px 8px 0px 0px; 
+        border-radius: 3px;
+        border: 1px solid #e1e0e1;
+        .input {
+            width: 333px;
+            height: 32px;        
+            color: #4a4a4a;
+            font-family: "Poppins-Regular";
+            font-size: 11px;
+            font-weight: 400;
+            font-style: normal;
+            letter-spacing: 0.8px;
+            line-height: normal;
+            text-align: left;
+            }
+        .input.focus {
+            font-style: normal;
+            color: #333; 
+        }
+        .input.err {
+            border: 1px solid red; 
+        }
+        }
+    &__button {
+        flex: 0 0 126px;
+    }
+    &__btn {   
+        width: 94px;
+        height: 32px;
+        border-radius: 3px;
+        background-color: #000000;
+        text-transform: uppercase;
+        font-weight: 300;        
+        color: #ffffff;
+        font-family: "Poppins-SemiBold";
+        font-size: 10px;
+        font-weight: 600;
+        font-style: normal;
+        letter-spacing: 1px;
+        line-height: 20px;
+        text-align: center;
+        text-transform: uppercase; 
+    }   
+}
+
+ 
+  @media (max-width: 750px) {
+    .subscribe{
+        &__body {
+           /*  padding: 32px 0;  */
+        }
+    }
+}
+
+  
+  @media (max-width: 500px) {
+    .subscribe{
+        &__form{
+           /* display: block; */ 
+        }
+        &__input{
+            width: 224px;
+            .input {
+                width: 224px;
+            }
+        }
+        &__btn {
+            width: 96px;
+          }
+    }
+}

@@ -1,0 +1,272 @@
+//====================================================================================================
+.header{
+	width: 100%;
+	position: relative;
+	&__img{
+		position: absolute;
+		width: 100%;
+		height: 750px;		 
+	}
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		text-align: center;
+	}
+	&__content {
+		position: absolute;
+		padding: 16px 24px 0 24px;
+		width: 100%;
+		top: 24px;
+		left: 0;
+		z-index: 1;
+		background: url(../img/Background_sing.png);
+		 
+		display: flex; 
+		flex-direction: column;
+		h1{
+			color: #ffffff;
+			font-family: "Poppins-Bold";
+			font-size: 60px;
+			font-weight: 700;
+			text-align: center;
+		}		 
+	}
+	&__menu {
+		margin: 0 auto;
+		text-align: center;
+	}
+	&__search {
+		position: relative;
+		width: 584px;
+		height: 48px;
+		border-radius: 3px;
+		border: 1px solid #f2f2f2;
+		background-color: rgba(255, 255, 255, 0.2);
+
+		input, button {
+			border: none;
+			outline: none;
+			background: transparent;
+			::placeholder{
+				color: #fff;
+			} 
+		  }
+			input {
+			width: 100%;
+			height: 48px;
+			padding-left: 15px;
+			color: #fff;
+			font-family:  "Poppins-Medium";
+			font-size: 11px;
+			font-weight: 500;
+			letter-spacing: 0.8px;
+			text-align: left;
+		  }
+		   button {
+			   padding: 2px 2px 2px 2px;
+			   background-image: url(../img/icons/Fill_1.jpg);
+			   background-size: 17px auto;
+			   background-repeat: no-repeat;
+			   letter-spacing: 48px;
+			   background-position: center;		   		    
+				height: 42px;
+				width: 42px;
+				position: absolute;
+				top: 0;
+				right: 0;
+				cursor: pointer;
+		  }		
+	}
+	&__user-acount{
+		width: 150px;
+		height: 17px;
+		display: flex;
+
+		.bascker{
+			width: 19px;
+			height: 26px;
+			background-color: rgba(0, 0, 0, 0.0);
+			cursor: pointer;
+			padding: 1px;
+		}
+	}
+	&__login{
+		width: 150px;
+		height: 26px;
+		display: flex;
+		align-items: center;
+
+		
+	}
+	&__logo{
+		text-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+		color: #ffffff;
+		font-family: "Poppins-Bold";
+		font-size: 38px;
+		font-weight: 700;
+		letter-spacing: 0.95px;	
+		text-align: left;
+	}
+
+}
+.login__btn{
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	font-family: "Poppins-SemiBold";
+	font-size: 11px;
+	font-weight: 600;
+	font-style: normal;
+	letter-spacing: 1px;
+	background-color:rgba(0, 0, 0, 0.0);
+	margin: 0 5px;
+	div{
+		width: 1px;
+		height: 4px;
+		border: 1px solid #fff;
+		background-color: #fff;
+	}
+ }
+.menu {
+	width: 100%;
+	margin: 24px auto;
+	// .menu__icon
+	&__icon {
+	}
+	// .menu__body
+	&__body {
+	}
+	// .menu__list
+	&__list {
+		display: flex;
+		justify-content: center;
+		li {
+			margin: 0px 15px 0px 0px;
+		}
+	}
+	// .menu__link
+	&__link {
+		text-shadow: 0 2px 4px rgba(0, 0, 0, 0.12);
+		color: #ffffff;
+		font-family: "Poppins-SemiBold";
+		font-size: 13px;
+		font-weight: 600;
+		letter-spacing: 1px;
+		text-align: center;
+		text-transform: uppercase;
+		margin: 0 15px;
+		&._active {
+			color: red;
+		}
+	}
+}
+.basket{
+	cursor: pointer;
+}
+.stores {
+	width: 100%;
+	height: 24px;
+	display: flex;
+	line-height: 24px;
+	justify-content: space-between;
+	align-items:center;
+	&__map{
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+		padding-right: 24px;
+		a{
+		
+		}
+		span{
+			color: #000000;
+			font-family: "Poppins-Regular";
+			font-size: 10px;
+			letter-spacing: 0.08px;
+			text-align: right;
+			padding-left: 6px;
+		}
+	}
+	&__title{
+		
+		color: #000000;
+		font-family: "Poppins-Medium";
+		font-size: 11px;
+		font-weight: 500;
+		letter-spacing: 0.8px;
+		text-align: center;
+		padding-left: 50%;
+		letter-spacing: 0.8px;
+		&__icon{
+			width: 16px;
+			height: 16px;
+		}
+
+
+
+	}
+}
+.home-page__title{
+	padding: 180px 0;
+	align-items: center;
+	text-align: center;
+
+}
+
+//====================================================================================================
+//Burger
+.icon-menu {
+	display: none;
+	@media (max-width: $md3+px) {
+		display: block;
+		position: absolute;
+		top: 18px;
+		left: 10px;
+		width: 30px;
+		height: 18px;
+		cursor: pointer;
+		z-index: 5;
+		span {
+			transition: all 0.3s ease 0s;
+			top: calc(50% - 1px);
+			left: 0px;
+			position: absolute;
+			width: 100%;
+			height: 2px;
+			background-color: #000;
+			&:first-child {
+				top: 0px;
+			}
+			&:last-child {
+				top: auto;
+				bottom: 0px;
+			}
+		}
+		&._active {
+			span {
+				transform: scale(0);
+				&:first-child {
+					transform: rotate(-45deg);
+					top: calc(50% - 1px);
+				}
+				&:last-child {
+					transform: rotate(45deg);
+					bottom: calc(50% - 1px);
+				}
+			}
+		}
+	}
+}
+
+
+
+//------@media 
+	
+	@media (max-width: $md3+px){
+		.menu{
+			&__body{
+				display: none;
+			}
+		}
+
+	}
