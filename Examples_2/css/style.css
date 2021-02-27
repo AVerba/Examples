@@ -1,0 +1,572 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+.wrapper {
+  height: 100%;
+  min-width: 1600px;
+  background-color: #fff;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  align-items: center;
+  height: 80px;
+  padding: 0 100px;
+  background-color: rgba(255, 255, 255, 0);
+}
+.header__logo {
+  width: 241px;
+  height: 54px;
+  margin-top: 53px;
+  margin-left: 190px;
+}
+.header .menu {
+  padding: 0px 0px 0px 3.15789%;
+  width: 700px;
+}
+.header .menu__list {
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  margin-top: 75px;
+  margin-left: 112px;
+}
+.header .menu__item {
+  width: 100px;
+}
+.header .menu__link {
+  width: 75px;
+  height: 10px;
+  color: #ffffff;
+  font-family: "GothamBook";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  text-transform: uppercase;
+  margin-right: 91px;
+}
+
+.cirle {
+  border-radius: 50%;
+  width: 9px;
+  height: 9px;
+  border: 1px solid #ffffff;
+  display: inline-block;
+}
+
+.cirle:hover {
+  background: #fff;
+}
+
+.about {
+  width: 1600px;
+  height: 800px;
+  background: url(../img/Bg_1.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.about__title {
+  width: 910px;
+  height: 59px;
+  color: #ffffff;
+  font-family: "gothambold1";
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 22px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  padding-top: 370px;
+  margin-left: 355px;
+}
+.about__subTitle {
+  width: 670px;
+  height: 13px;
+  color: #ffffff;
+  font-family: "GothamBook";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 13px;
+  text-transform: uppercase;
+  letter-spacing: 5.4px;
+  margin-top: 60px;
+  margin-left: 472px;
+}
+
+.projects {
+  width: 1600px;
+  height: 1400px;
+  background-color: #ffffff;
+}
+.projects__title {
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 340px;
+  height: 33px;
+  color: #2c4058;
+  font-family: "gothambold1";
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+.projects__item {
+  width: 1600px;
+  display: flex;
+  margin-top: 140px;
+}
+.projects__description {
+  display: inline-block;
+  width: 800px;
+  margin-left: 170px;
+}
+.projects__subtitle {
+  height: 65px;
+  width: 400px;
+  color: #2c4058;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 44px;
+  text-transform: uppercase;
+  font-family: "GothamBook";
+  font-weight: 700;
+}
+.projects__subtitle span {
+  font-family: "GothamBold";
+  font-weight: 700;
+  font-size: 36px;
+}
+.projects__item-content {
+  width: 460px;
+  height: 78px;
+  color: #4b5562;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-top: 39px;
+}
+.projects__more-info {
+  padding: 15px 32px;
+  height: 50px;
+  margin-top: 42px;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid #2c4058;
+  border-radius: 3px;
+  color: #2c4058;
+  font-family: "GothamBook";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+.projects__location {
+  width: 331px;
+  height: 18px;
+  margin-top: 56px;
+  color: #2c4058;
+  font-family: "Open Sans";
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.pic {
+  width: 800px;
+  position: relative;
+  display: inline-block;
+}
+.pic__background {
+  width: 585px;
+  height: 470px;
+  background-color: #55b7ff;
+}
+.pic__img {
+  background: url(../img/joel-filipe-151697.png);
+  background-size: contain;
+  width: 630px;
+  height: 470px;
+  display: flex;
+  position: absolute;
+  top: 70px;
+  left: 195px;
+}
+.pic .mirror_img {
+  background: url(../img/photos-1284iH4Hjf4mhNgW.png);
+  background-size: contain;
+  width: 630px;
+  height: 470px;
+  display: flex;
+  position: absolute;
+  top: 70px;
+  left: -195px;
+}
+.pic .mirror-background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 585px;
+  height: 470px;
+  background-color: #7e5aff;
+}
+
+.news {
+  width: 1600px;
+  height: 1000px;
+  background: url(../img/Bg_2.png);
+}
+.news__title {
+  width: 326px;
+  height: 31px;
+  color: #ffffff;
+  font-family: "gothambold1";
+  font-size: 44px;
+  font-weight: 500;
+  line-height: 22px;
+  text-transform: uppercase;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+.news .slide__container {
+  width: 370px;
+  height: 514px;
+  background-color: #ffffff;
+  margin: 0 13px;
+  margin-top: 10px;
+  display: inline-block;
+  cursor: pointer;
+}
+.news .slide__img {
+  width: 370px;
+  height: 240px;
+}
+.news .slide__title {
+  width: 300px;
+  height: 50px;
+  color: #2c4058;
+  font-family: "gothambold1";
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 34px;
+  text-transform: uppercase;
+  margin-left: 21px;
+  margin-top: 30px;
+}
+.news .slide__contetnt {
+  width: 337px;
+  height: 49px;
+  margin-left: 21px;
+  margin-top: 20px;
+  color: #4b5562;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+}
+.news .slide__container:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+.news .slide__author {
+  margin-left: 21px;
+  margin-top: 35px;
+}
+.news .author__subscribe {
+  display: inline-block;
+  margin-left: 20px;
+}
+.news .author__pic {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: top;
+}
+.news .author__name {
+  width: 190px;
+  height: 13px;
+  margin-top: 11px;
+  color: #2c4058;
+  font-family: "GothamBook";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+.news .post_date {
+  width: 90px;
+  height: 12px;
+  margin-top: 13px;
+  color: #55b7ff;
+  font-family: "GothamBook";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  display: inline-block;
+}
+
+.gallery {
+  width: 1600px;
+  height: 1000px;
+  background-color: #ffffff;
+}
+.gallery__title {
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-left: 693px;
+  width: 340px;
+  height: 33px;
+  color: #2c4058;
+  font-family: "gothambold1";
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+.gallery__container {
+  margin-left: 215px;
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 285px 285px 285px 285px;
+  grid-template-rows: 214px 214px;
+  gap: 5px 5px;
+  grid-template-areas: "first-item first-item second-item third-item" "first-item first-item forth-item fith-item";
+}
+.gallery .first-item {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: first-item;
+  background: url(../img/scott-webb-176434.png);
+  background-size: contain;
+}
+.gallery .second-item {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+  grid-area: second-item;
+  background: url(../img//photos-13323p6Bdc0uhr8Bq.png);
+  background-size: contain;
+}
+.gallery .third-item {
+  -ms-grid-row: 1;
+  -ms-grid-column: 7;
+  grid-area: third-item;
+  background: url(../img/echo-grid-156713.png);
+  background-size: contain;
+}
+.gallery .forth-item {
+  -ms-grid-row: 3;
+  -ms-grid-column: 5;
+  grid-area: forth-item;
+  background: url(../img/fuse-brussels-169216.png);
+  background-size: contain;
+}
+.gallery .fith-item {
+  -ms-grid-row: 3;
+  -ms-grid-column: 7;
+  grid-area: fith-item;
+  background: url(../img/tu-tram-pham-202263.png);
+  background-size: contain;
+}
+.gallery__more-info {
+  padding: 15px 32px;
+  height: 50px;
+  margin-left: 705px;
+  margin-top: 42px;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid #2c4058;
+  border-radius: 3px;
+  color: #2c4058;
+  font-family: "GothamBook";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+.contact {
+  width: 1600px;
+  height: 700px;
+}
+
+.footer {
+  background: url(../img/Bg_footer.png);
+  width: 1600px;
+  height: 524px;
+}
+.footer__logo img {
+  margin-top: 204px;
+  margin-left: 415px;
+}
+.footer__copyrigt {
+  display: inline-block;
+  width: 252px;
+  height: 13px;
+  margin-left: 415px;
+  margin-top: 42px;
+  color: #ffffff;
+  font-family: "GothamBook";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 13px;
+}
+.footer__company {
+  display: inline-block;
+  width: 166px;
+  height: 13px;
+  color: #ffffff;
+  font-family: "GothamBook";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 13px;
+  font-family: "GothamBook";
+  font-weight: 300;
+}
+
+.dash {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 100px;
+  margin-left: 750px;
+  width: 100px;
+  height: 1px;
+  background-color: #2c4058;
+}
+
+.dash-white {
+  display: inline-block;
+  margin: 0 auto;
+  margin-top: 140px;
+  margin-left: 750px;
+  width: 100px;
+  height: 1px;
+  background-color: #2fff;
+}
+
+.dash-vert {
+  display: inline-block;
+  width: 1px;
+  height: 13px;
+  background-color: #ffffff;
+  line-height: 13px;
+  margin: 0 10px;
+}
+
+.contant-btn {
+  padding: 15px 32px;
+  height: 50px;
+  margin-left: 415px;
+  margin-top: 42px;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid #fff;
+  border-radius: 3px;
+  color: #fff;
+  font-family: "GothamBook";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  display: none;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+/*
+.project__modal {
+  position: relative;
+  display: block;
+  width: 800px;
+  height: 352px;
+  margin: 80px auto;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: all 0.4s;
+  box-shadow: 0px 0px 120px -25px rgba(0, 0, 0, 0.5);
+}
+.project__modal:hover {
+  transform: scale(1.2);
+  box-shadow: 0px 0px 80px -25px rgba(0, 0, 0, 0.5);
+  transition: all 0.4s;
+}
+.project__modal .info_section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-blend-mode: multiply;
+  z-index: 2;
+  border-radius: 10px;
+  padding: 25px;
+  height: 100%;
+  &__item-img {
+    width: 350px;
+    height: 350px;
+  }
+}
+.info_section {
+  background: #fff;
+  width: 800px;
+  height: 350px;
+  display: flex;
+} */
+/*# sourceMappingURL=style.css.map */

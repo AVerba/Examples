@@ -1,0 +1,43 @@
+*{
+  font-family: 'Roboto Condensed', sans-serif;
+}
+html {
+  background-color: rgba(0, 0, 0, .1);
+  text-align: center;
+}
+head,
+title {
+  display: block;
+}
+title {
+  font-size: 50px;
+  margin-top: 50px;
+}
+.stopwatch {
+  padding: 60px 0px;
+  text-align: center;
+}
+.stopwatch h1{
+  background:rgba(51, 178, 202, .3);
+  border: 1px solid rgba(0, 0, 0, .2);
+  color: #000000;
+  display: inline-block;
+  font-size: 40px;
+  padding: 20px;
+  border-radius: 5px;
+  width: 170px;
+}
+.stopwatch button {
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  cursor: pointer;
+  outline: none;
+  border-bottom: 2px solid rgba(0, 0, 0, .2);
+}
+.stopwatch button + button {
+  margin-left: 10px;
+}
+.stopwatch button:hover {
+  border-bottom-color: #000;
+}
