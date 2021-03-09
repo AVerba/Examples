@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b3021908e5.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/poster-card.css">
+    <link rel="stylesheet" href="./style/modal.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <h1 class="header__title">Movies Gallery</h1>
+                <div class="header__content">
+                    <select class="serch_ganre">
+                        <option>ganre...</option>
+                        <option>Action</option>
+                        <option>Crime</option>
+                        <option>Comedy</option>
+                        <option>Drama</option>
+                        <option>Sci-Fi</option>
+                        <option>Adventure</option>
+                        <option>Thriller</option>
+                        <option>Sport</option>
+                        <option>Biography</option>
+                      </select>
+                      <nav class="NavSearch">
+                        <div class="d1">
+                            <form>
+                            <input type="text" id="InputSearch" class="InputSearch" placeholder="Search movie..." autofocus>
+                            <button id="SearchBtn" class="SearchBtn"></button>
+                            </form>
+                          </div>
+                    </nav>
+                    <div class="view__type">
+                        <p>view as:</p>
+                        <button id="btn_list"><i class="fas fa-list"></i></button>
+                        <button id="btn_gallery"><i class="fas fa-th"></i></button>          
+                    </div>
+                </div>
+            </div>
+        </header>
+             <main class="main container">
+               <div class="main-content">
+                    <div class="search-results" id="SearchResults">                 
+                    </div>
+                    <div class="favorite-list">
+                      <p>favorite-list</p>
+                      <ol id="favList"></ol>
+                    </div>                 
+               </div>
+             </main> 
+            <footer class="footer"></footer>
+        </div>
+    </div>   
+
+
+
+  <div class="modal" id="modal"> 
+    <div class="movie_card hide" id="movieCard">
+      <div class="info_section">
+        <div class="movie_header">
+          <img class="locandina" id="movieImg" src=""/>
+          <h1 id="movieName">Bright</h1>
+          <h4 id="movieYear">2017, David Ayer</h4>
+          <span class="minutes">117 min</span>
+          <p class="type">Action, Crime, Fantasy</p>
+        </div>
+        <div class="movie_desc">
+          <p class="text" id="movieDesc">
+            Set in a world where fantasy creatures live side by side with humans. A human cop is forced to work with an Orc to find a weapon everyone is prepared to kill for. 
+          </p>
+        </div>
+        <div class="movie_social">
+          <ul>
+            <li><i class="material-icons">share</i></li>
+            <li><i class="fas fa-thumbs-up"></i></li>            
+          </ul>
+        </div>
+      </div>
+      <div class="blur_back" id="movieCardBack"></div>
+    </div>
+    </div>
+    
+  
+    <script src="./js/script.js"></script>
+</body>
+
+
+</html>
